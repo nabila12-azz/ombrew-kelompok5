@@ -1,0 +1,285 @@
+/* ===== Variables ===== */
+:root {
+    --dg: #1a3a2e;
+    --mg: #2d5a3d;
+    --ac: #c8a96e;
+}
+
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Body ===== */
+body {
+    min-height: 100vh;
+    background: #d0d0d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 16px;
+}
+
+/* ===== Card ===== */
+.auth-card {
+    display: flex;
+    width: 100%;
+    max-width: 680px;
+    min-height: 360px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+}
+
+/* ===== Panel Kiri: Foto ===== */
+.card-photo {
+    width: 44%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    background: var(--dg);
+}
+
+.card-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.8);
+}
+
+.photo-fallback {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, #1a3a2e 0%, #2d5a3d 60%, #3d6b4a 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photo-fallback i {
+    font-size: 3rem;
+    color: rgba(200, 169, 110, 0.5);
+}
+
+.photo-fallback span {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.72rem;
+}
+
+/* ===== Panel Kanan: Form ===== */
+.card-form {
+    flex: 1;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 30px;
+}
+
+/* ===== Brand ===== */
+.brand-mark {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--dg);
+    font-style: italic;
+    font-family: Georgia, serif;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.brand-sub {
+    font-size: 0.75rem;
+    color: #888;
+    letter-spacing: 0.05em;
+    margin-bottom: 22px;
+}
+
+/* ===== Label ===== */
+.flabel {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #555;
+    display: block;
+    margin-bottom: 3px;
+}
+
+/* ===== Input Wrapper ===== */
+.iw {
+    position: relative;
+    margin-bottom: 11px;
+    width: 100%;
+}
+
+.iw .icon {
+    position: absolute;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 0.82rem;
+    pointer-events: none;
+}
+
+.iw input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 7px 32px 7px 28px;
+    font-size: 0.8rem;
+    color: #333;
+    background: #fafafa;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.iw input:focus {
+    border-color: var(--dg);
+    background: #fff;
+    box-shadow: 0 0 0 2px rgba(26, 58, 46, 0.1);
+}
+
+.iw .toggle-pw {
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-size: 0.82rem;
+    cursor: pointer;
+}
+
+.iw .toggle-pw:hover {
+    color: var(--dg);
+}
+
+/* ===== Row Register ===== */
+.frow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.frow a {
+    font-size: 0.7rem;
+    color: #888;
+    text-decoration: none;
+}
+
+.frow a.ac {
+    color: var(--ac);
+    font-weight: 600;
+}
+
+.frow a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Tombol Login ===== */
+.btn-auth {
+    width: 100%;
+    background: var(--dg);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    transition: background 0.2s;
+    margin-bottom: 13px;
+}
+
+.btn-auth:hover {
+    background: var(--mg);
+}
+
+/* ===== Or Line ===== */
+.or-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 11px;
+}
+
+.or-line::before,
+.or-line::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #efefef;
+}
+
+.or-line span {
+    font-size: 0.68rem;
+    color: #ccc;
+}
+
+/* ===== Social Buttons ===== */
+.social-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sbtn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    padding: 0;
+}
+
+.sbtn:hover {
+    border-color: var(--dg);
+}
+
+.sbtn svg {
+    width: 17px;
+    height: 17px;
+}
+
+.sbtn.fb {
+    background: #1877F2;
+    border-color: #1877F2;
+}
+
+/* ===== Error Box ===== */
+.err-box {
+    background: #fff5f5;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 520px) {
+    .auth-card {
+        flex-direction: column;
+    }
+
+    .card-photo {
+        width: 100%;
+        height: 150px;
+    }
+}

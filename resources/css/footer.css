@@ -1,0 +1,174 @@
+/* ===== Footer Section ===== */
+.footer-section {
+    background-color: #0f2d1e;
+    color: #ffffff;
+}
+
+/* ===== Brand ===== */
+.footer-brand {
+    margin-bottom: 1rem;
+}
+
+.footer-brand img {
+    height: 55px;
+    width: auto;
+}
+
+.footer-desc {
+    font-size: 0.83rem;
+    color: rgba(255, 255, 255, 0.50);
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+}
+
+/* ===== Social Buttons ===== */
+.footer-socials {
+    display: flex;
+    gap: 8px;
+}
+
+.footer-social-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-social-btn:hover {
+    background-color: #f5c518;
+    color: #0f2d1e;
+    border-color: #f5c518;
+}
+
+/* ===== Heading ===== */
+.footer-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #f5c518;
+    margin-bottom: 1.2rem;
+}
+
+/* ===== Nav List ===== */
+.footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav-list li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-nav-list li a {
+    color: rgba(255, 255, 255, 0.50);
+    text-decoration: none;
+    font-size: 0.87rem;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+.footer-nav-list li a:hover {
+    color: #f5c518;
+    padding-left: 5px;
+}
+
+/* ===== Hours List ===== */
+.footer-hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-hours-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.footer-hours-day {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.footer-hours-time {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.footer-hours-closed {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #e53935;
+}
+
+/* ===== Contact List ===== */
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.footer-contact-icon {
+    color: #f5c518;
+    font-size: 0.88rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+/* ===== Divider ===== */
+.footer-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.12), transparent);
+}
+
+/* ===== Bottom Bar ===== */
+.footer-bottom {
+    gap: 8px;
+}
+
+.footer-copy {
+    font-size: 0.80rem;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-copy-brand {
+    color: #f5c518;
+    font-weight: 600;
+}
+/* ===== Brand Name ===== */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.footer-brand-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+}

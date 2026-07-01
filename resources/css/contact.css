@@ -1,0 +1,189 @@
+/* ===== Hero Banner ===== */
+.contact-hero-banner {
+    width: 100%;
+    height: 200px;
+    background-image: url('/public/images/bgHome.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact-hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-hero-title {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+/* ===== Section ===== */
+.contact-section {
+    background-color: #ffffff;
+}
+
+/* ===== Card Base (abu-abu) ===== */
+.contact-card {
+    background-color: #d9d9d9;
+    border-radius: 8px;          /* lebih kotak, kurangi radius */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;     /* konten di tengah vertikal */
+    min-height: 220px;           /* paksa tinggi minimal */
+    width: 100%;
+    padding: 2rem 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Card Highlight (hijau gelap — Phone) ===== */
+.contact-card-highlight {
+    background-color: #1a3d2b;
+    min-height: 220px;           /* samakan tinggi dengan card lain */
+}
+
+/* ===== Icon ===== */
+.contact-icon {
+    font-size: 2.2rem;
+    color: #888;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.contact-card-highlight .contact-icon {
+    color: #ffffff;
+}
+
+/* ===== Card Title ===== */
+.contact-card-title {
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 1px;
+    color: #444;
+    margin-bottom: 0.4rem;
+}
+
+.contact-card-highlight .contact-card-title {
+    color: #ffffff;
+}
+
+/* ===== Card Desc ===== */
+.contact-card-desc {
+    font-size: 0.82rem;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.contact-card-highlight .contact-card-desc {
+    color: #ffffff;
+}
+/* ===== Bottom Section ===== */
+.contact-bottom-section {
+    background-color: #1a3d2b;
+}
+
+.contact-bottom-title {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.contact-bottom-desc {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+/* ===== Maps ===== */
+.contact-maps-wrap {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-maps {
+    border-radius: 10px;
+    display: block;
+}
+
+/* ===== Form ===== */
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-label {
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.contact-form-input {
+    background-color: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    padding: 10px 14px;
+    color: #ffffff;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+    width: 100%;
+    resize: none;
+}
+
+.contact-form-input:focus {
+    border-color: #ffffff;
+}
+
+.contact-form-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Tombol Kirim ===== */
+.btn-kirim {
+    background-color: #e53935;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 28px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-kirim:hover {
+    background-color: #c62828;
+}
+/* ===== Banner Delivery ===== */
+.delivery-banner {
+    width: 100%;
+    min-height: 200px;
+    background-image: url('/public/images/Screenshot\ 2026-06-23\ 183429.png'); /* hapus /public/ */
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+}
